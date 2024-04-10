@@ -1,0 +1,224 @@
+/* APENAS MUDANDO A COR DAS SECTIONS PARA DIFERENCIAR ENTRE ELAS */
+/* MUDAR AS CORES DEPOIS */
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1 {
+    background-color: #f8f9fa;
+}
+  .hero-section {
+
+  background-image: url(../IMAGENS/image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hero-section p {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  letter-spacing: 1.5px;
+}
+.hero-section h1 {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
+
+
+.section2 {
+    background-color: #dee2e6;
+}
+
+.section3 {
+    background-color: #ced4da;
+}
+
+.section4 {
+    background-color: #c4cedb;
+}
+
+.section5 {
+    background-color: #bcc8d6;
+}
+
+.section6 {
+    background-color: #aabed4;
+}
+
+.section7 {
+    background-color: #d2dae2;
+}
+
+/* TAMANHO DA LOGOMARCA */
+.logomotor img {
+    width: 250px;
+    height: 200px;
+}
+
+
+/* BARRA DE NAVEGAÇÃO RESPONSIVA */
+.navbar-toggler-icon {
+    background-color: #1f1e1e;
+    border-radius: 7px;
+
+}
+
+
+/* QUANDO PASSA O MOUSE NO MENU MUDA O BOTÃO */
+.navbar-custom a {
+    color: #0d353b;
+    border-radius: 100px;
+}
+
+.navbar-nav a:hover {
+    border-radius: 100px;
+    color: white;
+    background-color: #1f1e1e;
+
+}
+
+
+
+
+/* SECTION DA GALERIA */
+.gallery {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 15px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 800px;
+    max-height: 80%;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+}
+
+.close {
+    color: white;
+    font-size: 2em;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+
+
+
+
+/* REDES SOCIAIS */
+.contact-info {
+    margin-top: 20px;
+}
+
+.social-icons {
+    display: inline-block;
+}
+.social-icons img {
+    width: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+/* ANIMAÇÃO PERFEITA PARA AS REDES SOCIAIS!!!!!! */
+.social-icons a:hover{
+    display: inline-block;
+    transition: transform 0.2s;
+    transform: scale(1.2);
+}
+
+
+
+/*  */
+
+.first-section,
+.second-section {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  padding: 10px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+/* BOTAO DE MAIS DETALHES */
+.btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #000;
+    transform: scale(1.1);
+}
+
+
+/* BOTAO PARA SUBIR PARA O TOPO DO SITE */
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #333;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    z-index: 1000;
+    cursor: pointer;
+    transition: bottom 0.3s;
+}
+
+#back-to-top.active {
+    bottom: 40px; /* Muda a posição da seta quando ativa */
+}

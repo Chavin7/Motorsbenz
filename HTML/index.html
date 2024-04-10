@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../IMAGENS/logomotor.ico" type="image/x-icon">
+  <title>Motorsbenz</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+  <!-- BARRA DE NAVEGAÇÂO(LOGO) -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom p-4">
+    <div class="container">
+
+      <a class="logomotor" href="#"><img src="../IMAGENS/logo.png" alt=""></a>
+
+      <!-- nav responsiva -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#section1">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section2">Disponíveis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section5">Sobre nós</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section4">Comentários</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section7">Frete</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section8">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <hr>
+
+
+  <!--SECTION (Pagina inicial) -->
+  <section id="section1" class="section1 hero-section py-6" style="height: 70dvh;">
+    <div class="container py-3">
+      <div class="row g-5">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="col-12 col-lg-6" style="padding-top: 10%;">
+            <h1 class="text-white fw-bold">
+              Motorsbenz: Sua Jornada, nossa frota!
+            </h1>
+            <p class="text-white pt-1">
+              Na Motorsbenz, nossa paixão pela excelência em mobilidade nos impulsiona a oferecer soluções de aluguel de
+              veículos que vão além das expectativas.
+            </p>
+            <button class="btn mt-5">Solicitar Orçamento!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!--SECTION (DISPONÍVEIS)  -->
+  <section id="section2" class="section2">
+    <div class="container py-5">
+      <h1 class="text-center mb-5">Disponíveis para Frete</h1>
+      <hr>
+      <h5 class="text-center py-5">De ônibus e caminhões para transporte de passageiros e carga, a veículos aéreos e
+        náuticos para aventuras exclusivas, passando por máquinas agrícolas para operações no
+        campo e veículos particulares para viagens pessoais ou de negócios, nossa frota
+        diversificada garante que você encontre o veículo perfeito para cada ocasião.
+      </h5>
+      <hr>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card text-center">
+            <img src="../IMAGENS/carro1.jpg" alt="Carro 1" class="card-img-top">
+            <div class="card-body">
+              <a href="#section7">
+                <p class="card-text"><button class="btn">MAIS DETALHES</button></p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card text-center">
+            <img src="../IMAGENS/carro2.jpg" alt="Carro 2" class="card-img-top">
+            <div class="card-body">
+              <a href="#section7">
+                <p class="card-text"><button class="btn">MAIS DETALHES</button></p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card text-center">
+            <img src="../IMAGENS/carro3.jpg" alt="Carro 3" class="card-img-top">
+            <div class="card-body">
+              <a href="#section7">
+                <p class="card-text"><button class="btn">MAIS DETALHES</button></p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button id="showButton" class="container">Ver Mais</button>
+    </div>
+  </section>
+
+
+  <!--SECTION (Pagina com Galeria) -->
+  <section id="section3" class="section3 second-section hidden">
+    <div class="container">
+      <H1 class="text-center">GALERIA DE FOTOS</H1>
+      <!-- Linha1 -->
+      <div class="gallery">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="../GALERIA/foto1.png" alt="Imagem 1" onclick="openModal('../GALERIA/foto1.png')">
+          </div>
+          <div class="col-md-3">
+            <img src="../GALERIA/foto2.png" alt="Imagem 2" onclick="openModal('../GALERIA/foto2.png')">
+          </div>
+          <div class="col-md-3">
+            <img src="../GALERIA/foto3.png" alt="Imagem 3" onclick="openModal('../GALERIA/foto3.png')">
+          </div>
+          <div class="col-md-3">
+            <img src="../GALERIA/foto4.png" alt="Imagem 4" onclick="openModal('../GALERIA/foto4.png')">
+          </div>
+        </div>
+      </div>
+      <!-- linha2 -->
+      <div class="gallery">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="../GALERIA/foto5.png" alt="Imagem 5" onclick="openModal('../GALERIA/foto5.png')">
+          </div>
+          <div class="col-md-3">
+            <img src="../GALERIA/foto6.png" alt="Imagem 6" onclick="openModal('../GALERIA/foto6.png')">
+          </div>
+          <div class="col-md-3">
+            <img src="../GALERIA/foto7.png" alt="Imagem 7" onclick="openModal('../GALERIA/foto7.png')">
+          </div>
+          <div class="col-md-3">
+            <img src="../GALERIA/foto8.png" alt="Imagem 8" onclick="openModal('../GALERIA/foto8.png')">
+          </div>
+        </div>
+      </div>
+      <!-- linha3 -->
+      <div class="gallery">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="../GALERIA/foto9.png" alt="Imagem 9" onclick="openModal('../GALERIA/foto9.png')">
+          </div>
+          <div class="col-md-3">
+            <img src="../GALERIA/foto10.png" alt="Imagem 10" onclick="openModal('../GALERIA/foto10.png')">
+          </div>
+          <div class="col-md-3">
+            <img src="../GALERIA/foto11.png" alt="Imagem 11" onclick="openModal('../GALERIA/foto11.png')">
+          </div>
+          <div class="col-md-3">
+            <img src="../GALERIA/foto12.png" alt="Imagem 12" onclick="openModal('../GALERIA/foto12.png')">
+          </div>
+        </div>
+      </div>
+
+      <!-- Fechar imagem (GALERIA) -->
+      <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+  </section>
+
+
+  <!-- SECTION (PAGINA DE COMENTARIOS) -->
+  <section id="section4" class="section4">
+    <div class="container">
+      <div class="row">
+
+        <div class="container">
+          <h2 class="text-center mb-5">Comentários de Clientes</h2>
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-text">“Encontrei uma ampla variedade
+                    de opções para atender às minhas
+                    necessidades de transporte. Não
+                    poderia estar mais satisfeito com
+                    minha experiência!</p>
+                  <p class="card-text"><small class="text-muted">- ICARO07</small></p>
+                  <div class="rating">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-text">"Encontrei o veículo perfeito para
+                    minha viagem, o
+                    processo de reserva foi simples e
+                    eficiente. Com certeza
+                    alugarei com eles novamente no
+                    futuro.”
+                  </p>
+                  <p class="card-text"><small class="text-muted">- ENOCH08</small></p>
+                  <div class="rating">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-text">"Excelente atendimento e a
+                    entrega e retirada do veículo foram
+                    extremamente convenientes. Com certeza
+                    vou alugar com vocês novamente."</p>
+                  <p class="card-text"><small class="text-muted">- CHRISTHIELLEN</small></p>
+                  <div class="rating">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Adicione mais cards de comentários aqui -->
+      </div>
+  </section>
+
+  <!--SECTION (Pagina sobre nós) -->
+  <section id="section5" class="section5">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="../IMAGENS/truck.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-md-6">
+
+          <h1>Sobre nós</h1>
+          <h5>Na Motorsbenz, nossa paixão pela excelência em mobilidade nos impulsiona a oferecer soluções de aluguel de
+            veículos que vão além das expectativas. Desde o momento em que nossos clientes entram em contato conosco,
+            até o momento em que devolvem seus veículos, estamos dedicados a proporcionar uma experiência excepcional.
+            </p>
+            <p>Com uma ampla e diversificada frota de veículos, incluindo carros convencionais, veículos especiais e
+              utilitários, estamos preparados para atender as diversas necessidades de nossos clientes, seja para
+              viagens de lazer, negócios ou projetos especiais.
+          </h5>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!--SECTION (Form de reserva) -->
+  <section id="section7" class="section7">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12">
+          <h1 class="display-3 fw-bold">Solicite um Orçamento</h1>
+          <hr class="bg-white mb-4 mt-0 d-inline-block mx-auto" style="width: 100px; height:3px;">
+        </div>
+      </div>
+      <form>
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome Completo</label>
+          <input type="text" class="form-control" id="Nome COmpleto" placeholder="Nome Completo" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="Email" placeholder="Email" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="phone" class="form-label">Telefone</label>
+          <input type="tel" class="form-control" id="Telefone" placeholder="(77)99999-9999" required>
+        </div>
+
+
+        <div class="mb-3">
+          <label for="origem" class="form-label">Origem</label>
+          <input type="text" class="form-control" id="origem" placeholder="Cidade de origem" required>
+        </div>
+        <div class="mb-3">
+          <label for="destino" class="form-label">Destino</label>
+          <input type="text" class="form-control" id="destino" placeholder="Cidade de destino" required>
+        </div>
+        <div class="mb-3">
+          <label for="modelo" class="form-label">Tipo de Frota</label>
+          <select class="form-select" id="modelo" required>
+          </select>
+        </div>
+        <div class="text-center">
+          <button type="submit" id="btno" class="btn btn-primary">Calcular Frete</button>
+        </div>
+    </div>
+    </form>
+    </div>
+  </section>
+
+
+  <!--SECTION (Pagina de Contato) -->
+  <section id="section8" class="section8 text-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="contact-info">
+            <h2>Nossa Localização</h2>
+            <p><strong>Endereço:</strong> Parque Santa Lucia / Barreiras BA</p>
+            <p><strong>Telefone:</strong> (77) 3611-6856</p>
+            <p><strong>Email:</strong> motorsbenz@juridico.com
+            </p>
+          </div>
+          <div class="social-icons text-center mt-3">
+            <a href="https://www.instagram.com/LuizChavesz/" target="_blank"><img src="../ICONES/insta.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/Riodeondas/" target="_blank"><img src="../ICONES/face.png" alt="Facebook"></a>
+            <a href="https://api.whatsapp.com/send?phone=5577998331744&text=" target="_blank"><img src="../ICONES/zap.png" alt="WhatsApp"></a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.418607706041!2d-44.99341799999999!3d-12.1518785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x75f8aa2727d7c09%3A0x5bc700587c81579f!2sR.%20Volunt%C3%A1rios%20da%20P%C3%A1tria%2C%20569%20-%20Parque%20Santa%20Lucia%2C%20Barreiras%20-%20BA%2C%2047804-070!5e0!3m2!1spt-BR!2sbr!4v1711381890816!5m2!1spt-BR!2sbr" width="400" height="300" ></iframe><br>
+          <strong>Rua Voluntários da Pátria, R. Renato
+            Gonçalves,<br> Nº 569, Barreiras - BA, 47806-081</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seta para o topo -->
+  <a href="#" id="back-to-top" title="Voltar para o topo">&uarr;</a>
+
+
+  <!-- RODAPÉ -->
+  <footer class="text-center">
+    <p> © Motorsbenz All Rights Reserved 2024</p>
+  </footer>
+
+  <script src="../script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
